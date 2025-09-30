@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scorpion Movement</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 5em;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+    p {
+      max-width: 800px;
+      margin: 40px auto;
+      font-size: 1.2em;
+      line-height: 1.5;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .youtube-button,
+    .spotify-button,
+    .guests-button,
+    .about-button {
+      display: block;
+      width: 220px;
+      text-align: center;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .youtube-button {
+      background-color: red;
+    }
+    .youtube-button:hover {
+      background-color: #cc0000;
+      transform: scale(1.05);
+    }
+    .spotify-button {
+      background-color: #1DB954;
+    }
+    .spotify-button:hover {
+      background-color: #178a3a;
+      transform: scale(1.05);
+    }
+    .guests-button {
+      background-color: #e6b800; /* softer yellow */
+    }
+    .guests-button:hover {
+      background-color: #cc9900;
+      transform: scale(1.05);
+    }
+    .about-button {
+      background-color: #001f4d; /* darker blue */
+    }
+    .about-button:hover {
+      background-color: #000d26;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>SCORPION MOVEMENT</h1>
+  <p id="description">
+    Scorpion Movement is a nonpartisan cultural study group. We primarily host the Scorpion Movement Podcast, a show dedicated to exploring dissident philosophy and art, ranging from musicians and actors to historians of varying credentials, aiming to explore the postmodern landscape more thoroughly.
+  </p>
+
+  <div class="button-container">
+    <a class="youtube-button" href="https://www.youtube.com/@scorpionmovement" target="_blank">YouTube</a>
+    <a class="spotify-button" href="https://open.spotify.com/show/0Wpeh8MQiLGdYPwY0CosuN" target="_blank">Spotify</a>
+    <a class="guests-button" href="guests.html">Guests List</a>
+    <a class="about-button" href="about.html">About Us</a>
+  </div>
+
+  <script>
+    const desc = document.getElementById('description');
+    function flicker() {
+      const brightness = 0.7 + Math.random() * 0.3; // between 0.7 and 1
+      desc.style.opacity = brightness;
+      const next = 300 + Math.random() * 700; // random interval
+      setTimeout(flicker, next);
+    }
+    flicker();
+  </script>
+</body>
+</html>

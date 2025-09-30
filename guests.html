@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guests - Scorpion Movement</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 5em;
+      font-weight: bold;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+    }
+    .guest-list {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .guest {
+      background-color: #1a1a1a;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .guest:hover {
+      transform: scale(1.02);
+    }
+    .guest h2 {
+      margin: 0 0 8px;
+      font-size: 1.5em;
+    }
+    .guest p {
+      margin: 0;
+      font-size: 1.1em;
+      line-height: 1.5;
+      color: #cccccc;
+    }
+
+    /* Role-specific accent colors */
+    .youtuber { border-left: 6px solid #ff0000; }
+    .streamer { border-left: 6px solid #00aaff; }
+    .professor { border-left: 6px solid #1DB954; }
+    .theorist { border-left: 6px solid #ff66ff; }
+    .musician { border-left: 6px solid #ff9900; }
+    .artist { border-left: 6px solid #ffff33; }
+    .educator { border-left: 6px solid #0099cc; }
+    .blogger { border-left: 6px solid #ffcc00; }
+    .author { border-left: 6px solid #cc66ff; }
+    .politician { border-left: 6px solid #ff3300; }
+
+    .guest h2 a {
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+    .guest h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: darkred;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 50px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .back-button:hover {
+      background-color: #990000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>GUESTS LIST</h1>
+
+  <div class="guest-list">
+    <div class="guest youtuber">
+      <h2>hoe_math</h2>
+      <p>YouTuber</p>
+    </div>
+    <div class="guest streamer">
+      <h2><a href="https://en.wikipedia.org/wiki/Destiny_(streamer)" target="_blank">Destiny</a></h2>
+      <p>Live Streamer</p>
+    </div>
+    <div class="guest professor">
+      <h2><a href="https://en.wikipedia.org/wiki/Azar_Gat" target="_blank">Dr. Azar Gat</a></h2>
+      <p>Professor</p>
+    </div>
+    <div class="guest theorist">
+      <h2><a href="https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Gari%C3%A9py" target="_blank">Jean-François Gariépy</a></h2>
+      <p>Theorist</p>
+    </div>
+    <div class="guest musician">
+      <h2><a href="https://en.wikipedia.org/wiki/Charlie_Looker" target="_blank">Charlie Looker</a></h2>
+      <p>Musician</p>
+    </div>
+    <div class="guest professor">
+      <h2><a href="https://en.wikipedia.org/wiki/William_Egginton" target="_blank">William Egginton</a></h2>
+      <p>Professor</p>
+    </div>
+    <div class="guest musician">
+      <h2><a href="https://en.wikipedia.org/wiki/Adam_Gnade" target="_blank">Adam Gnade</a></h2>
+      <p>Musician</p>
+    </div>
+    <div class="guest artist">
+      <h2>Gio Pennacchietti</h2>
+      <p>Artist</p>
+    </div>
+    <div class="guest educator">
+      <h2>Viktor Petroff</h2>
+      <p>Educator</p>
+    </div>
+    <div class="guest blogger">
+      <h2>Rafael Holmberg</h2>
+      <p>Blogger</p>
+    </div>
+    <div class="guest author">
+      <h2>Shazam Watkins</h2>
+      <p>Author</p>
+    </div>
+    <div class="guest author">
+      <h2>Antonio Tati</h2>
+      <p>Author</p>
+    </div>
+    <div class="guest author">
+      <h2>T. Y. Lee</h2>
+      <p>Author</p>
+    </div>
+    <div class="guest blogger">
+      <h2>Thomas David Kahoe (TDK)</h2>
+      <p>Blogger</p>
+    </div>
+    <div class="guest musician">
+      <h2>Hugo Daniel</h2>
+      <p>Musician</p>
+    </div>
+    <div class="guest politician">
+      <h2>Matthew Adams</h2>
+      <p>Politician</p>
+    </div>
+  </div>
+
+  <a class="back-button" href="index.html">BACK TO SAFETY</a>
+</body>
+</html>
